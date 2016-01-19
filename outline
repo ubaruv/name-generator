@@ -1,0 +1,51 @@
+:::Project outline:::
+ 
+==>Input: Language
+ 
+==>Output: Name
+ 
+==>Functions:
+    >Main()
+    >GetLang()
+    >PatternSort()
+        >FindPattern(n) where n = 1-3
+        >SortPopularity()
+    >MakeName()
+        >
+ 
+==>Data Flow:
+    (Function A) | [passed value] -> (Function B) | [return value]
+   
+    User [language choice] -> Main() [name]
+    Main() [language choice] -> GetLang() [language file]
+    Main() [language file] -> PatternSort() [pattern set]
+    Main() [pattern set] -> MakeName() [name]
+ 
+==>Properties of a name:
+    Prefix   Mid   Suffix
+    [A] B [C D] E [F G H]
+ 
+==>Properties of a Pattern:
+    >length (1-3 chars)
+    >location (prefix, mid, suffix)
+    >popularity
+    >length of origin name (1-10 chars)
+ 
+==>Data Structure
+    >Type -> Hash Set
+    >Type contained -> List
+    >Type of contents -> Int & String
+    >Location: 0 - prefix, 1 - mid, 2 - suffix
+ 
+    Popularity | Pattern | Length of origin word | Location
+       1          "ale"     10        2
+ 
+==>Order of Operations
+    >Determine size of new name
+    >Determine a combination of pattern sizes
+    >Determine order of patterns
+    >Determine pattern location priority
+    >Determine pattern origin length priority
+    >Determine pattern popularity priority
+    >Choose sudo random patterns and add together
+    >return name
