@@ -31,7 +31,7 @@
     >popularity
     >length of origin name (1-10 chars)
  
-==>Data Structure
+==>Data Structure:
     >Type -> Hash Set
     >Type contained -> List
     >Type of contents -> Int & String
@@ -40,7 +40,7 @@
     Popularity | Pattern | Length of origin word | Location
        1          "ale"     10        2
  
-==>Order of Operations
+==>Order of Operations:
     >Determine size of new name
     >Determine a combination of pattern sizes
     >Determine order of patterns
@@ -49,3 +49,14 @@
     >Determine pattern popularity priority
     >Choose sudo random patterns and add together
     >return name
+    
+==>Sudo Code: Functions:
+        >Main()
+                -calls all three functions in succession
+        >GetLang()
+                -prompts users with list made of files in folder
+                        -language a
+                        -language ...
+                -uses files.dir.files() to list files in directory
+                -imports language file of string given
+        >
