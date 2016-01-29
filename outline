@@ -6,12 +6,22 @@
  
 ==>Functions:
     >Main()
-    >GetLang()
-    >PatternSort()
-        >FindPattern(n) where n = 1-3
-        >SortPopularity()
-    >MakeName()
-        >
+        >GetLang()
+            >Reads all the file names in the language folder
+            >Displays them for a user to chose one 
+            >Returns an array of all the names in that language
+        >PatternSort()
+            >FindFristAndLastLetters
+                >Talies the occurences of leters that occure as frist leters and last leters 
+                >Stores the data in a 2d array 
+                    >array singleLetters[26][3] 
+                        {{char letter,int fristOccurences,int LastOccurences}}
+                >returns the array
+            >FindPattern(n) where n = 2-3
+                
+            >SortPopularity()
+        >MakeName()
+            >
  
 ==>Data Flow:
     (Function A) | [passed value] -> (Function B) | [return value]
