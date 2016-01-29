@@ -20,7 +20,7 @@
                 -Concurrently runs through each word n leters at a time
                 -Talies the popularity and position of the letter combinations
                 -Stores the data in a 2d array
-                    .array nLetters[][4] = {{char letter,int fristOccurences,int middleOccurences, int LastOccurences}}
+                    .array nLetters[][5] = {{char letter,int lengthOfOriginalWord,int fristOccurences,int middleOccurences, int LastOccurences}}
         >MakeName()
             >
  
