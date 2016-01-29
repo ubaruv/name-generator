@@ -11,9 +11,12 @@
     
         >GetLang()
         
-            -Reads all the file names in the language folder
-            -Displays them for a user to chose one 
-            -Returns an array of all the names in that language
+            -Uses files.dir.files() to read files in language directory
+            -Prompts users with the list to chose one
+                1 English
+                2 Spanish
+                ...
+            -Returns an array of all the names in that language directory
             
             
         >PatternSort()
@@ -24,6 +27,7 @@
                 -Stores the data in a 2d array
                     .array nLetters[][5]
                         {{ char Pattern , int lengthOfOriginalWord , int PrefixOccurences , int MidOccurences , int SuffixOccurences }}
+                    
                     
         >MakeName()
             >Determine size of new name
@@ -54,13 +58,3 @@
     Pattern | Length of origin word | Occurences as Prefix | Occurences as Mid | Occurences as Suffix |
      "ale"             10                       2                    3                     4
  
-==>Sudo Code: Functions:
-        >Main()
-                -calls all three functions in succession
-        >GetLang()
-                -prompts users with list made of files in folder
-                        -language a
-                        -language ...
-                -uses files.dir.files() to list files in directory
-                -imports language file of string given
-        >
