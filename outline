@@ -5,11 +5,11 @@
 ==>Output: Name
 
  
-==>Functions:
+==>Seudo Code:
     >Main()
     
     
-        >GetLang()
+        >GetLang(array names)
         
             -Uses files.dir.files() to read files in language directory
             -Prompts users with the list to chose one
@@ -19,17 +19,17 @@
             -Returns an array of all the names in that language directory
             
             
-        >PatternSort()
+        >PatternSort(array names)
         
             >FindPattern(n,array nLetters,&arraysize) where n = 1-3
                 -Concurrently runs through each word n leters at a time
                 -Talies the popularity and position of the letter combinations
                 -Stores the data in a 2d array
-                    .array nLetters[][5]
+                    .array letters_n[][5]
                         {{ char Pattern , int lengthOfOriginalWord , int PrefixOccurences , int MidOccurences , int SuffixOccurences }}
                     
                     
-        >MakeName()
+        >MakeName( array letters_1 , array letters_2 , array letters_3 )
             >Determine size of new name
             >Determine a combination of pattern sizes
             >Determine order of patterns
