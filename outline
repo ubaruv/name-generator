@@ -7,18 +7,19 @@
 ==>Functions:
     >Main()
         >GetLang()
-            >Reads all the file names in the language folder
-            >Displays them for a user to chose one 
-            >Returns an array of all the names in that language
+            -Reads all the file names in the language folder
+            -Displays them for a user to chose one 
+            -Returns an array of all the names in that language
         >PatternSort()
-            >FindFristAndLastLetters
-                >Talies the occurences of leters that occure as frist leters and last leters 
-                >Stores the data in a 2d array 
-                    >array singleLetters[26][3] 
-                        {{char letter,int fristOccurences,int LastOccurences}}
-                >returns the array
+            >FindFristAndLastLetters()
+                -Talies the occurences of leters that occure as frist leters and last leters 
+                -Stores the data in a 2d array 
+                    .array singleLetters[26][3] = {{char letter,int fristOccurences,int LastOccurences}}
+                -returns the array
             >FindPattern(n) where n = 2-3
-                
+                -concurrently runs through each word two leters at a time
+                -Taies the pouaitey if the 6
+                -stores the poplarity 
             >SortPopularity()
         >MakeName()
             >
