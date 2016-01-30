@@ -42,14 +42,6 @@
             >Choose sudo random patterns and add together
             >return name
  
-==>Data Flow:
-    (Function A) | [passed value] -> (Function B) | [return value]
-   
-    User [language choice] -> Main() [name]
-    Main() [language choice] -> GetLang() [language file]
-    Main() [language file] -> PatternSort() [pattern set]
-    Main() [pattern set] -> MakeName() [name]
- 
 ==>Properties of a name:
     Prefix   Mid   Suffix
     [A] B [C D] E [F G H]
@@ -61,3 +53,10 @@
     Pattern | Length of origin word | Occurences as Prefix | Occurences as Mid | Occurences as Suffix |
      "ale"             10                       2                    3                     4
  
+==>Data Flow:
+    (Function A) | [passed value] -> (Function B) | [return value]
+   
+    User [language choice] -> Main() [name]
+    Main() [language choice] -> GetLang() [language file]
+    Main() [language file] -> PatternSort() [pattern set]
+    Main() [pattern set] -> MakeName() [name]
